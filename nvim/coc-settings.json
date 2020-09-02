@@ -1,0 +1,5 @@
+{
+	"rust-analyzer.inlayHints.refreshOnInsertMode": true,
+	"coc.preferences.formatOnSaveFiletypes": ["html", "css"],
+	"coc.preferences.formatOnType": true
+}
