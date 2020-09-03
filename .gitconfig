@@ -3,3 +3,5 @@
 	name = Eran Cohen
 [core]
 	editor = nvim
+[alias]
+	s = status
