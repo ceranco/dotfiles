@@ -75,7 +75,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions command-not-found tmux)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions command-not-found tmux)
 
 # Disable green background in ls and autocomplete
 eval "$(dircolors -p | \
@@ -115,7 +115,7 @@ export PATH="/home/ceranco/gnu-toolchains/gcc-arm-9.2-2019.12-x86_64-arm-none-li
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='ls --color=auto -F'
 alias sed='sed -E'
-alias learnvim='nvim -u ~/learn-vim-the-hard-way/init.vim'
+alias g='git'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
