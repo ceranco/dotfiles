@@ -281,6 +281,7 @@ nnoremap <silent><expr> <C-\> (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 " Use <leader>w and <leader>q to save / exit the document.
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
+nnoremap <leader>qq :q!<cr>
 nnoremap <leader>wq :wq<cr>
 
 " Map <H> and <L> (uppercase) to move to beginning and end of the current (display) line.
