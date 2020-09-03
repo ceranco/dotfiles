@@ -1,0 +1,5 @@
+[user]
+	email = ceranco@gmail.com
+	name = Eran Cohen
+[core]
+	editor = nvim
