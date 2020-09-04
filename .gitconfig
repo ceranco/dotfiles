@@ -5,3 +5,5 @@
 	editor = nvim
 [alias]
 	s = status
+	a = add
+	c = commit --verbose
