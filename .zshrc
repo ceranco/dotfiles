@@ -117,6 +117,7 @@ alias ls='ls --color=auto -F -a'
 alias sed='sed -E'
 alias g='git'
 alias gs='git status'
+alias gc='git commit --verbose'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
