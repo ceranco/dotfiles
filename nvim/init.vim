@@ -342,6 +342,9 @@ xmap <C-_> <Plug>Commentary
 nmap <C-_> <Plug>CommentaryLine
 imap <C-_> <C-O><Plug>CommentaryLine
 
+" Add newline without entering insert mode.
+nnoremap <leader>o o<esc>
+nnoremap <leader>O O<esc>
 " }}}
 
 " ------------------
