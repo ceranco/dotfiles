@@ -116,8 +116,8 @@ export PATH="/home/ceranco/gnu-toolchains/gcc-arm-9.2-2019.12-x86_64-arm-none-li
 alias ls='ls --color=auto -F -a'
 alias sed='sed -E'
 alias g='git'
-alias gs='git status'
-alias gc='git commit --verbose'
+alias gs='g s'
+alias gc='g c'
 alias gca='g ca'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
