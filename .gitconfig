@@ -7,3 +7,4 @@
 	s = status
 	a = add
 	c = commit --verbose
+	ca = commit --all --verbose
