@@ -49,6 +49,21 @@ set timeoutlen=300
 
 " }}}
 
+" -----------------------------
+" ------ Persistent Undo ------
+" -----------------------------
+" {{{
+
+" Create undo directory if needed.
+if !isdirectory("/tmp/.nvim-undo-dir")
+    call mkdir("/tmp/.nvim-undo-dir")
+endif
+
+set undodir=/tmp/.nvim-undo-dir
+set undofile
+
+" }}}
+
 " ---------------------
 " ------ Plugins ------
 " ---------------------
