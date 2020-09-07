@@ -307,20 +307,21 @@ onoremap il{ :<C-u>normal! F}vi{<cr>
 onoremap an{ :<C-u>normal! f{va{<cr>
 onoremap al{ :<C-u>normal! F}va{<cr>
 
-" Wrap word with single / double quotes and square / curly brackets.
+" Wrap word with quotes / brackets.
 nnoremap <leader>' viw<esc>`>a'<esc>`<i'<esc>
 nnoremap <leader>" viw<esc>`>a"<esc>`<i"<esc>
 nnoremap <leader>[ viw<esc>`>a]<esc>`<i[<esc>
 nnoremap <leader>{ viw<esc>`>a}<esc>`<i{<esc>
+nnoremap <leader>( viw<esc>`>a)<esc>`<i(<esc>
 
-" Wrap selection (visual mode) in single / double quotes or square / curly
-" brackets.
+" Wrap selection (visual mode) in quotes / brackets.
 " NOTE that `> and `< remember specific positions, so we should first insert
 " the last quote to prevent unneeded key-strokes.
 vnoremap <leader>' <esc>`>a'<esc>`<i'<esc>`>2l
 vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>`>2l
 vnoremap <leader>[ <esc>`>a]<esc>`<i[<esc>`>2l
 vnoremap <leader>{ <esc>`>a}<esc>`<i{<esc>`>2l
+vnoremap <leader>( <esc>`>a)<esc>`<i(<esc>`>2l
 
 " Adds a mapping to highlight trailing whitespace as an error.
 " Adds another mapping to clear match.
