@@ -135,10 +135,12 @@ endif
 " position. Coc only does snippet and additional edit on confirm.
 " <cr> could be remapped by other vim plugin, try `:verbose imap <cr>`.
 " Also call 'coc#on_enter()'.
+" This mapping uses an ugly hack to preserve indentation between when calling
+" 'coc#on_enter' - insert a character (x) and immediately delete it (<BS>).
 if exists('*complete_info')
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<cr>\<esc>:call coc#on_enter()\<cr>i"
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<cr>x\<BS>\<esc>:call coc#on_enter()\<cr>a"
 else
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<cr>\<esc>:call coc#on_enter()\<cr>i"
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<cr>x\<BS>\<esc>:call coc#on_enter()\<cr>a"
 endif
 
 " Use `[g` and `]g` to navigate diagnostics
