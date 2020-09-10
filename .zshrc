@@ -114,6 +114,8 @@ export PATH="/home/ceranco/gnu-toolchains/gcc-arm-9.2-2019.12-x86_64-arm-none-li
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='ls --color=auto -F -a'
+alias au='sudo apt update'
+alias afu='sudo apt full-upgrade'
 alias ac='sudo apt autoremove && sudo apt autoclean'
 alias sed='sed -E'
 alias g='git'
