@@ -98,7 +98,8 @@ call plug#end()
 let g:coc_global_extensions = [
 	\'coc-rust-analyzer',
 	\'coc-pairs',
-	\'coc-actions'
+	\'coc-actions',
+	\'coc-explorer'
 	\]
 
 " TextEdit might fail if hidden is not set.
@@ -242,6 +243,9 @@ nnoremap <silent><nowait> <leader>p  :<C-u>CocPrev<CR>
 nnoremap <expr><C-j> coc#util#has_float() ? coc#util#float_scroll(1) : "\<C-j>"
 nnoremap <expr><C-k> coc#util#has_float() ? coc#util#float_scroll(0) : "\<C-k>"
 
+" Mapping to open coc-explorer
+nnoremap <space>e :CocCommand explorer --sources buffer+,file+<cr>
+
 " }}}
 
 " ------------------------
@@ -367,6 +371,9 @@ nnoremap <leader>O O<esc>
 " Add semicolon at end of line.
 nnoremap <leader>; maA;<esc>`a
 inoremap <M-;> <esc>maA;<esc>`aa
+
+" Jump to numbered buffer
+nnoremap <leader>b :<C-U>exe v:count . "b"<cr>
 
 " }}}
 
