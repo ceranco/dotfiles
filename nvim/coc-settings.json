@@ -1,7 +1,0 @@
-{
-	"rust-analyzer.inlayHints.refreshOnInsertMode": true,
-	"coc.preferences.formatOnSaveFiletypes": ["html", "css"],
-	"rust-analyzer.cargo.loadOutDirsFromCheck": true,
-	"rust-analyzer.procMacro.enable": true,
-	"coc.preferences.formatOnType": true
-}
