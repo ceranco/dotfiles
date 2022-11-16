@@ -85,6 +85,7 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="/home/ceranco/gnu-toolchains/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -117,9 +118,21 @@ alias gs='g s'
 alias gc='g c'
 alias gca='g ca'
 
+alias cat='batcat'
+alias exa='exa -lha --color always --icons'
+alias exas='exa --sort cr -r'
+alias l='exa'
+
 # Add autocompletion directory
 fpath+=~/.zfunc
 compinit -u
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+autoload bashcompinit
+bashcompinit
