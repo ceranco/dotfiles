@@ -1,0 +1,29 @@
+# Tools
+
+* Shell: zsh (OMZ)
+* ZSH plugins: 
+  * zsh-autosuggestions
+  * zsh-syntax-highlighting
+* Terminal: alacritty
+* Prompt: starship
+* VCS: git
+* Editors: nvim + helix
+* Multiplexer: zellij (cargo)
+* Better ls: eza (cargo)
+* Better cat: batcat
+* Gnome extensions - run-or-raise
+
+# Configuration files
+
+.zshrc     -> ~/.zshrc
+.zfunc     -> ~/.zfunc
+.gitconfig -> ~/.gitconfig
+.config/nvim          -> ~/.config/nvim
+.config/alacritty     -> ~/.config/alacritty
+.config/zellij        -> ~/.config/zellij
+.config/starship.toml -> ~/.config/starship.toml
+.config/helix         -> ~/.config/helix
+.config/run-or-raise  -> ~/.config/run-or-raise
+
+# Font
+* MesloLGS NF: fonts/

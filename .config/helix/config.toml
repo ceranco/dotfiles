@@ -1,0 +1,7 @@
+theme = "onehalf_dark"
+
+[editor]
+line-number = "relative"
+
+[keys.insert]
+j = { k = "normal_mode" }

@@ -1,0 +1,71 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$os\
+$directory\
+$git_branch\
+$git_status\
+[ ](fg:background)\
+$time\
+$fill\
+$cmd_duration\
+$line_break\
+$character\
+"""
+
+palette = 'custom'
+
+[palettes.custom]
+background = '#444444'
+blue = '#00afff'
+dark-blue = '#0087af'
+grey = '#949494'
+light-yellow = '#ccc760'
+dark-green = '#65bf45'
+orange = '#cdae00'
+turquoise = '#5e807e'
+
+[os]
+style = "bg:background"
+disabled = false
+format = '[ $symbol ]($style)'
+
+[os.symbols]
+Ubuntu = ""
+
+[directory]
+style = "fg:blue bg:background bold"
+format = "[](fg:grey bg:background)[ ](fg:dark-blue bg:background)[ $path ]($style)"
+truncation_length = 4
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "fg:green bg:background"
+format = '[](fg:grey bg:background)[ $symbol $branch ]($style)'
+truncation_length = 20
+
+[git_status]
+style = "bg:background fg:blue"
+format = '[$all_status$ahead_behind ]($style)'
+conflicted = '󰞇'
+diverged = '󰃻'
+untracked = '[ ?$count](fg:blue bg:background)'
+stashed = '[ 📦](fg:light-yellow bg:background bold)[$count](fg:light-yellow bg:background)'
+modified = '[ !$count](fg:dark-green bg:background)'
+staged = '[ +$count](fg:orange bg:background)'
+renamed = '[ »$count](fg:orange bg:background)'
+deleted = '[ ✘$count](red bg:background)' 
+
+[cmd_duration]
+min_time = 1_000
+style = "fg:grey bg:background"
+format = '[](fg:background)[ $duration  ]($style)'
+
+[time]
+disabled = true
+style = "turquoise"
+format = '[$time]($style)'
+
+[fill]
+symbol = ' '
