@@ -27,3 +27,15 @@
 
 # Font
 * MesloLGS NF: fonts/
+
+# Run-or-raise shortcuts (~/.config/run-or-raise/shortcuts.conf):
+<Super>b,firefox,,
+<Super>t,alacritty,Alacritty,
+<Super>c,gtk-launch code.desktop,code,
+<Super>o,gtk-launch obsidian.desktop,obsidian,
+<Super>p,gtk-launch spotify_spotify.desktop,Spotify,
+<Super>f,evince,,
+<Super>r,gnome-calendar,org.gnome.Calendar,
+<Super>k,kuro,Kuro,
+<Super>s,slack,slack,
+<Super>u,chromium,chromium
