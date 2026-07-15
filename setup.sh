@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Set gsettings shortcuts
+gsettings set org.gnome.settings-daemon.plugins.media-keys rotate-video-lock-static '[]'
+gsettings set org.gnome.shell.keybindings toggle-quick-settings '[]'
+gsettings set org.gnome.mutter.keybindings switch-monitor '[]'
+
 # Install tools from APT
 sudo apt update
 sudo apt install -y alacritty bat neovim zsh pipx curl
