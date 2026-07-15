@@ -2,7 +2,6 @@
 set -euo pipefail
 
 # Install tools from APT
-sudo add-apt-repository ppa:maveonair/helix-editor
 sudo apt update
 sudo apt install -y alacritty bat neovim zsh pipx curl
 
@@ -16,6 +15,16 @@ cargo binstall eza zellij cargo-update
 
 # Install Starship
 curl -sS https://starship.rs/install.sh | sh -s -- --yes
+
+# Symlink configuration files
+for target in .zshrc .zfunc .gitconfig; do
+  ln -sf "$PWD/$target" "$HOME/$target"
+done
+
+mkdir -p "$HOME/.config"
+for target in .config/*; do
+  ln -sf "$PWD/$target" "$HOME/$target"
+done
 
 # ZSH setup
 RUNZSH=no CHSH=yes KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

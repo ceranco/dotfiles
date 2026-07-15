@@ -35,6 +35,9 @@ alias ac='sudo apt autoremove && sudo apt autoclean'
 ## sed
 alias sed='sed -E'
 
+## grep
+alias grep='egrep'
+
 ## git
 alias g='git'
 alias gs='g s'
@@ -53,3 +56,6 @@ bindkey -M viins '^j' history-incremental-search-forward
 
 # Enable starship prompt
 eval "$(starship init zsh)"
+
+# Autostart in zellij
+eval "$(zellij setup --generate-auto-start zsh)"
